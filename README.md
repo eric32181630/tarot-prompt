@@ -25,4 +25,4 @@ If you want to run this project locally on your machine or inspect the source co
 
 1. Clone the repository:
    ```bash
-   git clone [https://github.com/YOUR_USERNAME/tarotprompt.git](https://github.com/YOUR_USERNAME/tarotprompt.git)
+git clone https://github.com/eric32181630/tarot-prompt.git
