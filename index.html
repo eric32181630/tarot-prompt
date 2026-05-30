@@ -1,0 +1,309 @@
+<!DOCTYPE html>
+<html lang="zh-TW">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>神秘塔羅牌占卜 (Mystic Tarot Reading)</title>
+    <link rel="stylesheet" href="style.css">
+    <link
+        href="https://fonts.googleapis.com/css2?family=Cinzel:wght@400;700&family=Noto+Serif+SC:wght@300;400;700&family=Noto+Serif+TC:wght@300;400;700&display=swap"
+        rel="stylesheet">
+</head>
+
+<body>
+    <div id="stars"></div>
+    <div id="twinkles"></div>
+
+    <main class="container glass-panel">
+        <!-- Divine Ornaments -->
+        <svg class="decor-corner tl" viewBox="0 0 120 120" aria-hidden="true">
+            <path d="M 8,8 C 30,8 60,15 80,30 C 90,38 95,50 98,75" fill="none" stroke="var(--gold-dark)" stroke-width="1.2" stroke-linecap="round"/>
+            <path d="M 12,12 C 16,22 28,24 32,16 C 24,12 16,10 12,12 Z" fill="var(--gold-light)" stroke="var(--gold-dark)" stroke-width="0.8"/>
+            <path d="M 28,11 C 38,13 46,6 50,0 C 40,0 32,5 28,11 Z" fill="var(--gold-light)" stroke="var(--gold-dark)" stroke-width="0.8"/>
+            <path d="M 40,16 C 50,22 62,20 66,10 C 56,8 46,10 40,16 Z" fill="var(--gold-light)" stroke="var(--gold-dark)" stroke-width="0.8"/>
+            <path d="M 58,21 C 68,31 80,28 84,18 C 74,14 64,16 58,21 Z" fill="var(--gold-light)" stroke="var(--gold-dark)" stroke-width="0.8"/>
+            <path d="M 72,30 C 76,42 88,44 92,34 C 84,30 76,28 72,30 Z" fill="var(--gold-light)" stroke="var(--gold-dark)" stroke-width="0.8"/>
+            <path d="M 84,45 C 88,58 98,58 102,48 C 96,44 88,42 84,45 Z" fill="var(--gold-light)" stroke="var(--gold-dark)" stroke-width="0.8"/>
+            <path d="M 25,35 L 27,37 L 25,39 L 23,37 Z" fill="var(--gold-dark)"/>
+            <path d="M 50,45 L 51,46 L 50,47 L 49,46 Z" fill="var(--gold-dark)"/>
+            <circle cx="15" cy="55" r="1.2" fill="var(--gold-dark)"/>
+            <circle cx="65" cy="28" r="1" fill="var(--gold-dark)"/>
+        </svg>
+        <svg class="decor-corner tr" viewBox="0 0 120 120" aria-hidden="true">
+            <path d="M 8,8 C 30,8 60,15 80,30 C 90,38 95,50 98,75" fill="none" stroke="var(--gold-dark)" stroke-width="1.2" stroke-linecap="round"/>
+            <path d="M 12,12 C 16,22 28,24 32,16 C 24,12 16,10 12,12 Z" fill="var(--gold-light)" stroke="var(--gold-dark)" stroke-width="0.8"/>
+            <path d="M 28,11 C 38,13 46,6 50,0 C 40,0 32,5 28,11 Z" fill="var(--gold-light)" stroke="var(--gold-dark)" stroke-width="0.8"/>
+            <path d="M 40,16 C 50,22 62,20 66,10 C 56,8 46,10 40,16 Z" fill="var(--gold-light)" stroke="var(--gold-dark)" stroke-width="0.8"/>
+            <path d="M 58,21 C 68,31 80,28 84,18 C 74,14 64,16 58,21 Z" fill="var(--gold-light)" stroke="var(--gold-dark)" stroke-width="0.8"/>
+            <path d="M 72,30 C 76,42 88,44 92,34 C 84,30 76,28 72,30 Z" fill="var(--gold-light)" stroke="var(--gold-dark)" stroke-width="0.8"/>
+            <path d="M 84,45 C 88,58 98,58 102,48 C 96,44 88,42 84,45 Z" fill="var(--gold-light)" stroke="var(--gold-dark)" stroke-width="0.8"/>
+            <path d="M 25,35 L 27,37 L 25,39 L 23,37 Z" fill="var(--gold-dark)"/>
+            <path d="M 50,45 L 51,46 L 50,47 L 49,46 Z" fill="var(--gold-dark)"/>
+            <circle cx="15" cy="55" r="1.2" fill="var(--gold-dark)"/>
+            <circle cx="65" cy="28" r="1" fill="var(--gold-dark)"/>
+        </svg>
+        <svg class="decor-corner bl" viewBox="0 0 120 120" aria-hidden="true">
+            <path d="M 8,8 C 30,8 60,15 80,30 C 90,38 95,50 98,75" fill="none" stroke="var(--gold-dark)" stroke-width="1.2" stroke-linecap="round"/>
+            <path d="M 12,12 C 16,22 28,24 32,16 C 24,12 16,10 12,12 Z" fill="var(--gold-light)" stroke="var(--gold-dark)" stroke-width="0.8"/>
+            <path d="M 28,11 C 38,13 46,6 50,0 C 40,0 32,5 28,11 Z" fill="var(--gold-light)" stroke="var(--gold-dark)" stroke-width="0.8"/>
+            <path d="M 40,16 C 50,22 62,20 66,10 C 56,8 46,10 40,16 Z" fill="var(--gold-light)" stroke="var(--gold-dark)" stroke-width="0.8"/>
+            <path d="M 58,21 C 68,31 80,28 84,18 C 74,14 64,16 58,21 Z" fill="var(--gold-light)" stroke="var(--gold-dark)" stroke-width="0.8"/>
+            <path d="M 72,30 C 76,42 88,44 92,34 C 84,30 76,28 72,30 Z" fill="var(--gold-light)" stroke="var(--gold-dark)" stroke-width="0.8"/>
+            <path d="M 84,45 C 88,58 98,58 102,48 C 96,44 88,42 84,45 Z" fill="var(--gold-light)" stroke="var(--gold-dark)" stroke-width="0.8"/>
+            <path d="M 25,35 L 27,37 L 25,39 L 23,37 Z" fill="var(--gold-dark)"/>
+            <path d="M 50,45 L 51,46 L 50,47 L 49,46 Z" fill="var(--gold-dark)"/>
+            <circle cx="15" cy="55" r="1.2" fill="var(--gold-dark)"/>
+            <circle cx="65" cy="28" r="1" fill="var(--gold-dark)"/>
+        </svg>
+        <svg class="decor-corner br" viewBox="0 0 120 120" aria-hidden="true">
+            <path d="M 8,8 C 30,8 60,15 80,30 C 90,38 95,50 98,75" fill="none" stroke="var(--gold-dark)" stroke-width="1.2" stroke-linecap="round"/>
+            <path d="M 12,12 C 16,22 28,24 32,16 C 24,12 16,10 12,12 Z" fill="var(--gold-light)" stroke="var(--gold-dark)" stroke-width="0.8"/>
+            <path d="M 28,11 C 38,13 46,6 50,0 C 40,0 32,5 28,11 Z" fill="var(--gold-light)" stroke="var(--gold-dark)" stroke-width="0.8"/>
+            <path d="M 40,16 C 50,22 62,20 66,10 C 56,8 46,10 40,16 Z" fill="var(--gold-light)" stroke="var(--gold-dark)" stroke-width="0.8"/>
+            <path d="M 58,21 C 68,31 80,28 84,18 C 74,14 64,16 58,21 Z" fill="var(--gold-light)" stroke="var(--gold-dark)" stroke-width="0.8"/>
+            <path d="M 72,30 C 76,42 88,44 92,34 C 84,30 76,28 72,30 Z" fill="var(--gold-light)" stroke="var(--gold-dark)" stroke-width="0.8"/>
+            <path d="M 84,45 C 88,58 98,58 102,48 C 96,44 88,42 84,45 Z" fill="var(--gold-light)" stroke="var(--gold-dark)" stroke-width="0.8"/>
+            <path d="M 25,35 L 27,37 L 25,39 L 23,37 Z" fill="var(--gold-dark)"/>
+            <path d="M 50,45 L 51,46 L 50,47 L 49,46 Z" fill="var(--gold-dark)"/>
+            <circle cx="15" cy="55" r="1.2" fill="var(--gold-dark)"/>
+            <circle cx="65" cy="28" r="1" fill="var(--gold-dark)"/>
+        </svg>
+
+        <svg class="decor-top" viewBox="0 0 100 60" aria-hidden="true">
+            <path d="M 25,15 Q 50,45 75,15 Q 50,28 25,15 Z" fill="var(--gold-dark)" />
+            <path d="M 50,5 L 52,9 L 56,10 L 52,11 L 50,15 L 48,11 L 44,10 L 48,9 Z" fill="var(--gold-dark)"/>
+            <circle cx="35" cy="30" r="1.5" fill="var(--gold-dark)"/>
+            <circle cx="65" cy="30" r="1.5" fill="var(--gold-dark)"/>
+        </svg>
+        <svg class="decor-bottom" viewBox="0 0 160 80" aria-hidden="true">
+            <path d="M 60,80 A 20,20 0 0,1 100,80 Z" fill="var(--gold-light)" stroke="var(--gold-dark)" stroke-width="1.2"/>
+            <path d="M 50,80 A 30,30 0 0,1 110,80" fill="none" stroke="var(--gold-dark)" stroke-dasharray="2 3" stroke-width="1"/>
+            <line x1="80" y1="58" x2="80" y2="25" stroke="var(--gold-dark)" stroke-width="1" />
+            <line x1="66" y1="66" x2="40" y2="40" stroke="var(--gold-dark)" stroke-width="1" />
+            <line x1="94" y1="66" x2="120" y2="40" stroke="var(--gold-dark)" stroke-width="1" />
+            <line x1="56" y1="74" x2="25" y2="65" stroke="var(--gold-dark)" stroke-width="1" />
+            <line x1="104" y1="74" x2="135" y2="65" stroke="var(--gold-dark)" stroke-width="1" />
+            <line x1="72" y1="61" x2="58" y2="35" stroke="var(--gold-dark)" stroke-width="0.8" />
+            <line x1="88" y1="61" x2="102" y2="35" stroke="var(--gold-dark)" stroke-width="0.8" />
+            <circle cx="80" cy="20" r="1.5" fill="var(--gold-dark)" />
+            <circle cx="40" cy="40" r="1.2" fill="var(--gold-dark)" />
+            <circle cx="120" cy="40" r="1.2" fill="var(--gold-dark)" />
+            <path d="M 50,25 L 52,27 L 50,29 L 48,27 Z" fill="var(--gold-dark)"/>
+            <path d="M 110,25 L 112,27 L 110,29 L 108,27 Z" fill="var(--gold-dark)"/>
+        </svg>
+        <svg class="decor-left" viewBox="0 0 40 80" aria-hidden="true">
+            <path d="M 30,10 Q 5,40 30,70 Q 18,40 30,10 Z" fill="var(--gold-dark)"/>
+            <circle cx="20" cy="20" r="1" fill="var(--gold-dark)"/>
+            <circle cx="20" cy="60" r="1" fill="var(--gold-dark)"/>
+        </svg>
+        <svg class="decor-right" viewBox="0 0 40 80" aria-hidden="true">
+            <path d="M 10,10 Q 35,40 10,70 Q 22,40 10,10 Z" fill="var(--gold-dark)"/>
+            <circle cx="20" cy="20" r="1" fill="var(--gold-dark)"/>
+            <circle cx="20" cy="60" r="1" fill="var(--gold-dark)"/>
+        </svg>
+        <!-- Top Bar -->
+        <div class="top-bar">
+            <button id="journal-btn" class="journal-trigger-btn">📖 占卜日誌</button>
+            <div class="lang-selector">
+                <button class="lang-btn active" data-lang="en">EN</button>
+                <button class="lang-btn" data-lang="zh-cn">简</button>
+                <button class="lang-btn" data-lang="zh-tw">繁</button>
+            </div>
+        </div>
+
+        <header>
+            <h1 class="title" id="app-title">星辰塔羅牌</h1>
+            <p class="subtitle" id="app-subtitle">讓星空指引你的迷惘，探索靈魂的深處。</p>
+        </header>
+
+        <section class="controls">
+            <div class="input-group">
+                <label for="question-input" id="label-question">你心中的問題是？ (選填)</label>
+                <input type="text" id="question-input" class="glow-input" placeholder="例如：我該換工作嗎？或是未來的感情發展？">
+            </div>
+
+            <div class="input-group">
+                <label for="spread-select" id="label-spread">選擇占卜牌陣：</label>
+                <select id="spread-select" class="glow-select">
+                    <!-- Options will be populated dynamically to match active language -->
+                </select>
+            </div>
+
+            <!-- Astro Accordion -->
+            <div class="astro-accordion">
+                <button type="button" class="astro-accordion-header" id="astro-header">
+                    <span id="astro-header-title">✨ 注入星盤能量 (選填)</span>
+                    <span class="arrow">▼</span>
+                </button>
+                <div class="astro-accordion-content hidden">
+                    <!-- Astro Tabs -->
+                    <div class="astro-tabs">
+                        <button type="button" class="astro-tab-btn active" data-tab="birth" id="tab-birth-label">📅 生辰定位</button>
+                        <button type="button" class="astro-tab-btn" data-tab="detail" id="tab-detail-label">🪐 星盤參數</button>
+                    </div>
+
+                    <!-- Tab 1: Birth Info -->
+                    <div class="astro-tab-content active" id="tab-birth">
+                        <div class="grid-2">
+                            <div class="input-group">
+                                <label for="birth-date" id="label-birth-date">出生日期</label>
+                                <input type="date" id="birth-date" class="glow-input">
+                            </div>
+                            <div class="input-group">
+                                <label for="birth-time" id="label-birth-time">出生時間</label>
+                                <input type="time" id="birth-time" class="glow-input">
+                            </div>
+                        </div>
+                        <div class="input-group">
+                            <label for="birth-location" id="label-birth-location">出生地點</label>
+                            <input type="text" id="birth-location" class="glow-input" placeholder="e.g. New York">
+                        </div>
+                    </div>
+
+                    <!-- Tab 2: Detailed Parameters -->
+                    <div class="astro-tab-content hidden" id="tab-detail">
+                        <p class="astro-instructions" id="astro-manual-instruction">請填寫您星盤中各星體落入的星座：</p>
+                        <div class="astro-grid">
+                            <div class="input-group-inline">
+                                <label for="astro-sun" id="label-sun">☉ 太陽</label>
+                                <select id="astro-sun" class="glow-select astro-select">
+                                    <option value="" class="opt-empty">- 選擇 -</option>
+                                </select>
+                            </div>
+                            <div class="input-group-inline">
+                                <label for="astro-moon" id="label-moon">☽ 月亮</label>
+                                <select id="astro-moon" class="glow-select astro-select">
+                                    <option value="" class="opt-empty">- 選擇 -</option>
+                                </select>
+                            </div>
+                            <div class="input-group-inline">
+                                <label for="astro-asc" id="label-asc">Asc 上升</label>
+                                <select id="astro-asc" class="glow-select astro-select">
+                                    <option value="" class="opt-empty">- 選擇 -</option>
+                                </select>
+                            </div>
+                            <div class="input-group-inline">
+                                <label for="astro-mercury" id="label-mercury">☿ 水星</label>
+                                <select id="astro-mercury" class="glow-select astro-select">
+                                    <option value="" class="opt-empty">- 選擇 -</option>
+                                </select>
+                            </div>
+                            <div class="input-group-inline">
+                                <label for="astro-venus" id="label-venus">♀ 金星</label>
+                                <select id="astro-venus" class="glow-select astro-select">
+                                    <option value="" class="opt-empty">- 選擇 -</option>
+                                </select>
+                            </div>
+                            <div class="input-group-inline">
+                                <label for="astro-mars" id="label-mars">♂ 火星</label>
+                                <select id="astro-mars" class="glow-select astro-select">
+                                    <option value="" class="opt-empty">- 選擇 -</option>
+                                </select>
+                            </div>
+                            <div class="input-group-inline">
+                                <label for="astro-jupiter" id="label-jupiter">♃ 木星</label>
+                                <select id="astro-jupiter" class="glow-select astro-select">
+                                    <option value="" class="opt-empty">- 選擇 -</option>
+                                </select>
+                            </div>
+                            <div class="input-group-inline">
+                                <label for="astro-saturn" id="label-saturn">♄ 土星</label>
+                                <select id="astro-saturn" class="glow-select astro-select">
+                                    <option value="" class="opt-empty">- 選擇 -</option>
+                                </select>
+                            </div>
+                            <div class="input-group-inline">
+                                <label for="astro-uranus" id="label-uranus">♅ 天王星</label>
+                                <select id="astro-uranus" class="glow-select astro-select">
+                                    <option value="" class="opt-empty">- 選擇 -</option>
+                                </select>
+                            </div>
+                            <div class="input-group-inline">
+                                <label for="astro-neptune" id="label-neptune">♆ 海王星</label>
+                                <select id="astro-neptune" class="glow-select astro-select">
+                                    <option value="" class="opt-empty">- 選擇 -</option>
+                                </select>
+                            </div>
+                            <div class="input-group-inline">
+                                <label for="astro-pluto" id="label-pluto">♇ 冥王星</label>
+                                <select id="astro-pluto" class="glow-select astro-select">
+                                    <option value="" class="opt-empty">- 選擇 -</option>
+                                </select>
+                            </div>
+                            <div class="input-group-inline">
+                                <label for="astro-mc" id="label-mc">MC 天頂</label>
+                                <select id="astro-mc" class="glow-select astro-select">
+                                    <option value="" class="opt-empty">- 選擇 -</option>
+                                </select>
+                            </div>
+                        </div>
+                    </div>
+
+                </div>
+            </div>
+
+            <button id="draw-btn" class="primary-btn pulse-glow">開始抽牌</button>
+        </section>
+
+        <section id="results-container" class="hidden">
+            <div class="divider">
+                <span>✦</span>
+            </div>
+            <h2 class="results-title" id="results-title">命運的指引</h2>
+            <div id="cards-display" class="cards-grid">
+                <!-- 卡片將會動態生成於此 -->
+            </div>
+
+            <div class="actions">
+                <button id="copy-btn" class="secondary-btn">✨ 一鍵複製結果供 AI 分析</button>
+                <span id="copy-feedback" class="feedback-msg">已複製到剪貼簿！</span>
+            </div>
+        </section>
+    </main>
+
+    <!-- Journal Modal Overlay -->
+    <div id="journal-modal" class="modal-overlay hidden">
+        <div class="modal-content glass-panel">
+            <!-- Modal Ornaments -->
+            <svg class="decor-corner tl" viewBox="0 0 120 120" aria-hidden="true">
+                <path d="M 8,8 C 30,8 60,15 80,30 C 90,38 95,50 98,75" fill="none" stroke="var(--gold-dark)" stroke-width="1.2" stroke-linecap="round"/>
+                <path d="M 12,12 C 16,22 28,24 32,16 C 24,12 16,10 12,12 Z" fill="var(--gold-light)" stroke="var(--gold-dark)" stroke-width="0.8"/>
+                <circle cx="15" cy="55" r="1.2" fill="var(--gold-dark)"/>
+            </svg>
+            <svg class="decor-corner tr" viewBox="0 0 120 120" aria-hidden="true">
+                <path d="M 8,8 C 30,8 60,15 80,30 C 90,38 95,50 98,75" fill="none" stroke="var(--gold-dark)" stroke-width="1.2" stroke-linecap="round"/>
+                <path d="M 12,12 C 16,22 28,24 32,16 C 24,12 16,10 12,12 Z" fill="var(--gold-light)" stroke="var(--gold-dark)" stroke-width="0.8"/>
+                <circle cx="15" cy="55" r="1.2" fill="var(--gold-dark)"/>
+            </svg>
+            <svg class="decor-corner bl" viewBox="0 0 120 120" aria-hidden="true">
+                <path d="M 8,8 C 30,8 60,15 80,30 C 90,38 95,50 98,75" fill="none" stroke="var(--gold-dark)" stroke-width="1.2" stroke-linecap="round"/>
+                <path d="M 12,12 C 16,22 28,24 32,16 C 24,12 16,10 12,12 Z" fill="var(--gold-light)" stroke="var(--gold-dark)" stroke-width="0.8"/>
+                <circle cx="15" cy="55" r="1.2" fill="var(--gold-dark)"/>
+            </svg>
+            <svg class="decor-corner br" viewBox="0 0 120 120" aria-hidden="true">
+                <path d="M 8,8 C 30,8 60,15 80,30 C 90,38 95,50 98,75" fill="none" stroke="var(--gold-dark)" stroke-width="1.2" stroke-linecap="round"/>
+                <path d="M 12,12 C 16,22 28,24 32,16 C 24,12 16,10 12,12 Z" fill="var(--gold-light)" stroke="var(--gold-dark)" stroke-width="0.8"/>
+                <circle cx="15" cy="55" r="1.2" fill="var(--gold-dark)"/>
+            </svg>
+
+            <button id="close-journal-btn" class="close-btn">&times;</button>
+            
+            <header class="modal-header">
+                <h2 id="modal-title" class="results-title">📖 占卜日誌</h2>
+            </header>
+
+            <div class="modal-body scrollable" id="journal-list">
+                <!-- History records will be rendered here dynamically -->
+            </div>
+
+            <footer class="modal-footer">
+                <button id="clear-history-btn" class="secondary-btn">🗑️ 清除所有紀錄</button>
+            </footer>
+        </div>
+    </div>
+
+    <script src="script.js"></script>
+</body>
+
+</html>
