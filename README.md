@@ -19,10 +19,12 @@ An elegant, pure front-end Tarot divination web application designed to bridge m
 - **Storage**: Web Storage API (`localStorage`)
 - **Deployment**: Hosted on Netlify
 
-## 🚀 Getting Started (Run Locally)
+## 🚀 Run Completely Offline (No Internet Required)
 
-If you want to run this project locally on your machine or inspect the source code:
+Since this is a pure front-end application, you can run it permanently on your local machine without an internet connection or visiting any external website.
 
-1. Clone the repository:
-   ```bash
-git clone https://github.com/eric32181630/tarot-prompt.git
+1. Click here to **[📥 Download the Offline Package (ZIP)](https://github.com/eric32181630/tarot-prompt/archive/refs/heads/main.zip)**.
+2. Extract (unzip) the downloaded file on your computer.
+3. Open the folder and **double-click `index.html`**. 
+
+The Tarot app will launch instantly in your browser, 100% offline!
